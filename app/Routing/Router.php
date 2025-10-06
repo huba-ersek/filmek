@@ -3,8 +3,7 @@
 namespace App\Routing;
 
 use App\Controllers\HomeController;
-use App\Controllers\SubjectController;
-use App\Controllers\ClassController;
+use App\Controllers\FilmController;
 use App\Views\Display;
 
 class Router
@@ -46,13 +45,24 @@ class Router
             case '/':
                 HomeController::index();
                 return;
+            case '/filmek':
+                $filmController = new FilmController();
+                $filmController->index();
+                return;
 			default:
 				$this->notFound();
 		}
     }
     private function handlePostRequests(string $requestUri)
     {
-        
+        switch ($requestUri)
+        {
+            case '/install':
+                $install = new Install();
+                $install->install();
+                header("Location: /");
+                break;
+        }
     }
     private function handlePatchRequests(string $requestUri)
     {

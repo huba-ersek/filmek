@@ -15,7 +15,7 @@ class View
         }
         if ($useLayout)
         {
-            Layout::header($data['title'] ?? 'Iskola');
+            Layout::header($data['title'] ?? 'Filmek');
         }
         extract($data);
         include $viewFile;

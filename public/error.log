@@ -1,0 +1,224 @@
+[06-Oct-2025 10:29:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Routing\FilmController" not found in C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php:50
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(27): App\Routing\Router->handleGetRequests('/filmek')
+#1 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(20): App\Routing\Router->dispatch('GET', '/filmek')
+#2 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#3 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php on line 50
+[06-Oct-2025 10:30:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method App\Controllers\FilmController::index() cannot be called statically in C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php:49
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#1 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#2 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#3 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php on line 49
+[06-Oct-2025 10:30:41 Europe/Berlin] PHP Fatal error:  Type of App\Models\Film::$id must be int (as in class App\Models\Model) in C:\xampp\htdocs\asd\filmek-main\app\Models\Film.php on line 5
+[06-Oct-2025 10:30:54 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Film::__construct(), 0 passed in C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php on line 13 and at least 1 expected in C:\xampp\htdocs\asd\filmek-main\app\Models\Film.php:21
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(13): App\Models\Film->__construct()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(49): App\Controllers\FilmController->__construct()
+#2 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#4 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#5 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Models\Film.php on line 21
+[06-Oct-2025 10:32:12 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Film::__construct(), 0 passed in C:\xampp\htdocs\asd\filmek-main\app\Models\Model.php on line 21 and at least 1 expected in C:\xampp\htdocs\asd\filmek-main\app\Models\Film.php:21
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Models\Model.php(21): App\Models\Film->__construct()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Models\Model.php(87): App\Models\Model->mapToModel(Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(19): App\Models\Model->all(Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Models\Film.php on line 21
+[06-Oct-2025 10:32:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:7
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 7
+[06-Oct-2025 10:34:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 8
+[06-Oct-2025 10:34:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:7
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 7
+[06-Oct-2025 10:34:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:7
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 7
+[06-Oct-2025 10:34:55 Europe/Berlin] PHP Warning:  Undefined variable $film in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 4
+[06-Oct-2025 10:34:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 8
+[06-Oct-2025 10:34:59 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 4
+[06-Oct-2025 10:34:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 8
+[06-Oct-2025 10:35:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 8
+[06-Oct-2025 10:36:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 16
+[06-Oct-2025 10:36:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Models\Model::$id must not be accessed before initialization in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\asd\filmek-main\app\Views\View.php(21): include()
+#1 C:\xampp\htdocs\asd\filmek-main\app\Controllers\Controller.php(27): App\Views\View::render('films/index', Array)
+#2 C:\xampp\htdocs\asd\filmek-main\app\Controllers\FilmController.php(22): App\Controllers\Controller->render('films/index', Array)
+#3 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(50): App\Controllers\FilmController->index()
+#4 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(26): App\Routing\Router->handleGetRequests('/filmek')
+#5 C:\xampp\htdocs\asd\filmek-main\app\Routing\Router.php(19): App\Routing\Router->dispatch('GET', '/filmek')
+#6 C:\xampp\htdocs\asd\filmek-main\public\index.php(11): App\Routing\Router->handle()
+#7 {main}
+  thrown in C:\xampp\htdocs\asd\filmek-main\app\Views\films\index.php on line 15

@@ -2,9 +2,11 @@
 
 namespace App\Views;
 
+use App\Database\Install;
+
 class Layout
 {
-    public static function header($title = "Iskola")
+    public static function header($title = "Filmek")
     {
         echo <<<HTML
         <!DOCTYPE html>
@@ -17,6 +19,7 @@ class Layout
         <body>
         HTML;
         self::navbar();
+        self::installButton();
         self::handleMessages();
         echo '<div class="container">';
     }
@@ -30,8 +33,19 @@ class Layout
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-button"><a href="/"><button style="button" title="Kezdőlap">Kezdőlap</button></a></li>
+                <li class="nav-button"><a href="/filmek"><button style="button" title="Filmek">Filmek</button></a></li>
             </ul>
         </nav>
+        HTML;
+    }
+    public static function installButton()
+    {
+        $install = new Install();
+        if ($install->dbExists()) return;
+        echo <<<HTML
+        <form method="post" action="/install">
+            <button type="submit" name="btn-install">Adatbázis telepítése</button>
+        </form>
         HTML;
     }
     public static function sidebar()
